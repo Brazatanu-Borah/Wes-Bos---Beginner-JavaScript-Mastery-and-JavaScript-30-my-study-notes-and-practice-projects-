@@ -22,3 +22,26 @@ By the end of this 60-day sprint, I intend to build, debug, and navigate the fol
 * **Vanilla JavaScript:** Solving problems using pure JS before leaning on modern frameworks.
 
 ---
+
+
+### 🗂️ Repository Structure
+
+To keep things clean, the codebase is split into two primary folders:
+
+```text
+├── JSMastery/   # Concept notes and practice code from the core course
+└── JS30/        # Day-by-day challenge projects (01 - 30)
+```
+
+
+---
+
+### 📈 Progress & Accountability Tracker
+
+*Change `[ ]` to `[x]` as you complete your weekly milestones!*
+
+- [ ] **Week 1-2:** Core Basics, Variables, Functions, and Basic DOM Selector Exercises
+- [ ] **Week 3-4:** Array Methods, Events, Object Basics, and Initial JS30 Challenges
+- [ ] **Week 5-6:** Mid-point Sprint: Complex DOM manipulation and Layout Challenges
+- [ ] **Week 7-8:** Async JavaScript, Fetch API, and Working with External Data/APIs
+- [ ] **Week 9-10:** Final JS30 Build-outs, Personal Customizations, and Optimization

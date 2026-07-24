@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h2>Variables & Statements</h2>
+
+
+  <script>
+
+    /*
+      STATEMENT - 
+        >> An instruction that tells the computer to do ONE COMPLETE TASK
+        >> Every statement in JS should end with a semicolon
+        >> We may omit the semicolon as JS supports ASI (Automatic Semicolon Insertion) >>> not recommended for beginners. Once we are much experienced with JS we can take advantage of ASI
+
+      CODE BLOCK - anything wrapped within the opening and closing curly braces
+        {
+          // code block
+        }
+
+        some loops, if statements, functions have 'Code Blocks'
+          >> these do not end with a semicolon
+            >> the 'Code Block' itself does not instruct the computer to do something, the code inside of it does
+
+            if () {
+              console.log('hello');
+            }
+    */
+
+
+    /* 
+    
+      VARIABLE - containers to store data (memory pointers) 
+      [variables will contain data that can be changed later or data that cannot be changed later!!]
+
+      VARIABLE DECLARATION - create a variable in memory (using a keyword and variable name)
+      VARIABLE INITIALIZATION - assign some data in that variable using the '='
+        >> Put whatever is inside the right side of the = sign inside the variable that is to the left of the = sign
+
+      Sometimes we can declare and initialize the variable in the same statement!!
+        >> must for constants
+
+
+      VARIABLE NAMING
+        - always start with lowercase letters
+        - can also start with _ or $ sign [not recommended]
+          >>>> $ - jQuery 7 || _ - lodash - will create conflicts with these libraries
+        - can contains letters, 1-0, _ or $
+        - multi word names - use camelCase
+
+        When Naming Classes 
+          - start with uppercase letter
+          - multi word names - use PascalCase
+
+        kebab-case-is-not-allowed-in-javascript
+          >> hyphens not allowed in JS, but allowed in CSS
+
+        snake_case - is allowed, used by people coming from PHP world
+
+        VALID VARIABLE NAMES
+          age
+          myAge
+          myAge22
+          my_Age
+          my$$Age
+
+    */
+
+
+    // ERRORS - mainly in console
+        // tells what went wrong and where it went wrong; contains some standard error messages
+
+
+    // 3 ways to declare variables - var, let and const
+      var first = 'wes';
+      let age = 300;
+      const isHuman = true;
+
+      
+      // var and let can be declared and left uninitialized; const MUST BE declared and initialized in the same statement
+      var dog;
+      let cat;
+      const plant; // ❌ will give error
+      const tree = 'birch'; // ✅
+
+
+      // var and let - we can 'change/update' the value in them later; const we cannot
+      // we don't have to redeclare the var or let again, we just update the value inside of it
+      first = 'westerhoff';
+      age = 400;
+      isHuman = false; // ❌ will give error 'Assignment to constant variable'
+
+
+      // CONST - fixed values only eg. API keys, image element, >>> exception Arrays and Objects
+
+
+
+      // BASIC VARIABLE SCOPE concept ==== WHERE CAN I ACCESS MY VARIABLES????
+      // var is function scoped; whereas let and const are block scoped
+      // all three have global scope though!!
+      // GLOBAL VARIABLES can be updated either from the script tag or the console itself!
+
+
+      /* WHN TO USE WHICH NOTATION -
+          By default ALWAYS 'const' (without any thought)
+          If I will update it later I use 'let'
+          'var' - sometimes block scoping creates annoyance in some cases, only then RARELY
+      */
+      
+
+
+      // 🔥 MAIN PROBLEM WITH var
+      /*
+        we can redeclare a separate variable with same name and different value later using var. Creates lots of problems
+            var age = 12;
+            var age = 21;
+              >> both valid and code may break later
+
+        let and const - we have no option to create a second variable with the same name
+      */
+
+
+      
+      // STRICT MODE
+
+      // Browser fixes undeclared values but those which are initialized; which also becomes an issue sometimes
+
+        // var fish; this was be put by the browser in the early days
+        fish = 'salmon'; // this is what we wrote
+
+      /*
+        To fix this we can use 'use strict'; just after the opening script tag or as the very first statement in the external JS file (before writing any code) 
+
+        <script>
+            use strict';
+
+        This will show errrors // Variable is not defined
+
+        ✅ This strict mode is enforced by default in JS MODULES!!
+      */
+
+
+
+  </script>
+</body>
+
+</html>

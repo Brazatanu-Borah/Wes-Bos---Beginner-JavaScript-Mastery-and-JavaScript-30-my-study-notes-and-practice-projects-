@@ -1,0 +1,52 @@
+
+Chrome (Browser) [good dev tools]
+****************
+
+  Open Elements tab
+  ctrl+shift+I || F12
+
+  Open Console
+    ctrl+shift+J
+
+  Open Source Code
+    ctrl+U
+
+
+
+Code Editor (Visual Studio Code)
+********************************
+
+
+
+Terminal (Windows Powershell with GitBash as the Default Profile)
+Also GitBash as the version of terminal emulator inside of VS Code
+*******************************************************+++++++++
+  
+  'clear'   - clears the terminal
+
+  'ls'      - list out names only
+  'ls -l'   - Long listing format. Shows size, permissions, and dates.
+  'ls -a'   - Lists all contents. Includes hidden dot files
+
+  'dir'     - Provides a simplified, wide-column list format.
+
+  'cd'      - move into new directory
+  'cd ..'   - move out/up one level
+  'pwd'     - print working directory
+
+  'exit'    - closes the terminal window
+
+
+
+NODE JS & NPM (Wes uses 10.10.0 | 6.4.1)
+----------------------------------------
+  'node -v' - lists the node.js version installed
+  'npm -v'  - lists the npm version installed
+  
+  'node'    - opens REPL in terminal window (to write and execute js)
+            - press CTRL+C 2 times to exit node REPL and go back to Command Line Mode
+
+              READ-EVAL-PRINT LOOP
+
+              server side version of the browser console!!
+              CTRL+C - exits the node REPL and goes back to the Command Line

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <h2>Running and Loading Javascript</h2>
+
+    <!-- 
+  
+    Running JavaScript in
+    ---------------------
+
+      Browser Console (temporary)
+      
+      HTML document
+        Script tag
+        External script file [MOST PRODUCTION APPS]
+          >> also modules
+
+      Node
+        we open node REPL and write JS in it
+        - no browser APIs will be available in Node
+
+      
+
+  -->
+
+
+    <!-- 
+    
+    Browser reads HTML document from top to bottom!!
+
+    We must make sure that JS finds the elements first on which it must act on
+
+    *** 
+      All JavaScript by standard convention should be placed just before the closing body tag, ait ensures that all the DOM elements have finished loading by the time the browser finds the script tag to execute the code inside of it
+    *** 
+
+    - Other options like defer/async and type="module"  allows us to place the script tag inside the head and delay the execution of the script till the DOM has loaded
+
+    Browser can recognize script tag and switches languages and runs the JS inside and then exits out of the script tag and then goes towards the bottom of the document to find other html to be parsed (if any)
+
+  -->
+
+
+
+    <!-- SCRIPT TAG are container tags (has both opening tag and closing tag) -->
+    <!-- Using script tag (embedded javascript code) -->
+    <script>
+      console.log('Hello from Embedded JavaScript Code');
+    </script>
+
+    <!-- Using script tag with 'src' attribute (external javascript file)
+    [relative file path - for own own custom JS file or absolute file path - for loading externally hosted JS file]
+  -->
+    <script src="app.js"></script>
+
+    <!-- 
+    MULTIPLE JS FILES
+    -----------------
+      - when browser will hit these multiple script tags, it will go and download all the JS files one after the other
+
+      - with modules we can bundle all those individual JS files into one main JS file which the browser can load as a single JS file all the code from 5 different JS files in that single main JS file
+
+      - also we can do "code-splitting". Break up a large codebase/file into multiple smaller pieces and load those pieces on demand!!
+  -->
+
+  </body>
+
+</html>

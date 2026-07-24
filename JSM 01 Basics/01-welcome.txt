@@ -1,0 +1,19 @@
+General House Keeping
+---------------------
+
+Ex files included
+Github repo
+https://github.com/wesbos/beginner-javascript
+
+
+VIDEO TUTORIAL STUDY TECHNIQUE
+------------------------------
+  Watch Video - Repeat - study technique
+  Every video deals with one simple concept
+
+  Write the code from memory
+  Check for mistakes in Wes's code
+  Correct my code where required; add notes why it went wrong and what is the correct way
+    - do some exercises
+
+---------------------------------
